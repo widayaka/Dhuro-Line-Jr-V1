@@ -1,8 +1,8 @@
 void line(int mode, int count, int v_speed, int breaktime){
   if(v_speed > 4 && v_speed < 8)    {kp = 8,  ki = 0, kd = 0.05;}
-  if(v_speed > 7 && v_speed < 11)   {kp = 12,  ki = 0, kd = 0.2;}
+  if(v_speed > 7 && v_speed < 11)   {kp = 25,  ki = 0, kd = 0.25;}
   if(v_speed > 10 && v_speed < 14)  {kp = 11, ki = 0, kd = 0.15;}
-  if(v_speed > 13 && v_speed < 17)  {kp = 20, ki = 0, kd = 0.25;}
+  if(v_speed > 13 && v_speed < 17)  {kp = 30, ki = 0, kd = 0.5;}
   if(v_speed > 16 && v_speed < 21)  {kp = 23, ki = 0, kd = 0.5;}
 
   v_speed = pwm_conv(v_speed);
@@ -66,9 +66,9 @@ void line(int mode, int count, int v_speed, int breaktime){
 
 void sline(int mode, int count, int v_speed, int breaktime){
   if(v_speed > 4 && v_speed < 8)    {kp = 8,  ki = 0, kd = 0.05;}
-  if(v_speed > 7 && v_speed < 11)   {kp = 12,  ki = 0, kd = 0.2;}
+  if(v_speed > 7 && v_speed < 11)   {kp = 25,  ki = 0, kd = 0.25;}
   if(v_speed > 10 && v_speed < 14)  {kp = 11, ki = 0, kd = 0.15;}
-  if(v_speed > 13 && v_speed < 17)  {kp = 20, ki = 0, kd = 0.25;}
+  if(v_speed > 13 && v_speed < 17)  {kp = 30, ki = 0, kd = 0.5;}
   if(v_speed > 16 && v_speed < 21)  {kp = 23, ki = 0, kd = 0.5;}
 
   v_speed = pwm_conv(v_speed);
@@ -348,7 +348,7 @@ void left(int vl, int vr, int dtime){
   }
 }
 
-void left0(int vl, int vr, int dtime){
+void left7(int vl, int vr, int dtime){
   vl = pwm_conv(vl);  vr = pwm_conv(vr);
   call_motor(vl,vr);
   
@@ -369,7 +369,7 @@ void left0(int vl, int vr, int dtime){
   }
 }
 
-void left1(int vl, int vr, int dtime){
+void left6(int vl, int vr, int dtime){
   vl = pwm_conv(vl);  vr = pwm_conv(vr);
   call_motor(vl,vr);
   
@@ -390,7 +390,7 @@ void left1(int vl, int vr, int dtime){
   }
 }
 
-void left2(int vl, int vr, int dtime){
+void left5(int vl, int vr, int dtime){
   vl = pwm_conv(vl);  vr = pwm_conv(vr);
   call_motor(vl,vr);
   
@@ -411,7 +411,7 @@ void left2(int vl, int vr, int dtime){
   }
 }
 
-void left3(int vl, int vr, int dtime){
+void left4(int vl, int vr, int dtime){
   vl = pwm_conv(vl);  vr = pwm_conv(vr);
   call_motor(vl,vr);
   
@@ -432,7 +432,7 @@ void left3(int vl, int vr, int dtime){
   }
 }
 
-void left4(int vl, int vr, int dtime){
+void left3(int vl, int vr, int dtime){
   vl = pwm_conv(vl);  vr = pwm_conv(vr);
   call_motor(vl,vr);
   
@@ -453,7 +453,7 @@ void left4(int vl, int vr, int dtime){
   }
 }
 
-void left5(int vl, int vr, int dtime){
+void left2(int vl, int vr, int dtime){
   vl = pwm_conv(vl);  vr = pwm_conv(vr);
   call_motor(vl,vr);
   
@@ -474,7 +474,7 @@ void left5(int vl, int vr, int dtime){
   }
 }
 
-void left6(int vl, int vr, int dtime){
+void left1(int vl, int vr, int dtime){
   vl = pwm_conv(vl);  vr = pwm_conv(vr);
   call_motor(vl,vr);
   
@@ -495,7 +495,7 @@ void left6(int vl, int vr, int dtime){
   }
 }
 
-void left7(int vl, int vr, int dtime){
+void left0(int vl, int vr, int dtime){
   vl = pwm_conv(vl);  vr = pwm_conv(vr);
   call_motor(vl,vr);
   

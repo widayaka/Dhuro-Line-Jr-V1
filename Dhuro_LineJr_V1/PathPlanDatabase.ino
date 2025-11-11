@@ -1,3 +1,9 @@
 void setPathPlan(){
-  sline(s6+s7, 1, 10, 5);
+  line(fr,2,15,1);
+  right0(15,-15,1);
+  line(fl,1,15,1);
+  motor(15,15,150,1);
+  left0(-15,15,1);
+  motor(15,15,150,1);
+  line(fl,1,15,1);
 }

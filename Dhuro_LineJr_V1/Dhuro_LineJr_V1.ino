@@ -241,21 +241,21 @@ void lineTrace(int speed){
   int spr, spl;
   readBinarySensor();
   switch(sensorbin){
-    case 0b00000001: error = 12;  break;
-    case 0b00000011: error = 10;  break;
-    case 0b00000010: error = 8;   break;
-    case 0b00000110: error = 6;   break;
-    case 0b00000100: error = 4;   break;
+    case 0b00000001: error = 7;  break;
+    case 0b00000011: error = 6;  break;
+    case 0b00000010: error = 5;   break;
+    case 0b00000110: error = 4;   break;
+    case 0b00000100: error = 3;   break;
     case 0b00001100: error = 2;   break;
     case 0b00001000: error = 1;   break;
     case 0b00011000: error = 0;   break;
     case 0b00010000: error = -1;  break;
     case 0b00110000: error = -2;  break;
-    case 0b00100000: error = -4;  break;
-    case 0b01100000: error = -6;  break;
-    case 0b01000000: error = -8;  break;
-    case 0b11000000: error = -10; break;
-    case 0b10000000: error = -12; break;
+    case 0b00100000: error = -3;  break;
+    case 0b01100000: error = -4;  break;
+    case 0b01000000: error = -5;  break;
+    case 0b11000000: error = -6; break;
+    case 0b10000000: error = -7; break;
   }
   
   // kp = 8, ki = 0, kd = 0.05; //speed 5,6,7
